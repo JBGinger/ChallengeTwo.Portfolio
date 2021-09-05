@@ -1,0 +1,22 @@
+:root {
+    --first-color: #659DBD;
+    --second-color: #8D8741;
+    --third-color: #DAAD86;
+    --fourth-color: #BC986A;
+    --fifth-color: #FBEEC1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    color: var(--second-color);
+}
+
+body {
+    color: var(--fifth-color);
+}

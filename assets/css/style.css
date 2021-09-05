@@ -6,11 +6,21 @@
 }
 
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
 header {
     padding: 20px 35px;
@@ -23,15 +33,6 @@ header {
     background-attachment: scroll;
     background-position: 80%;
     z-index: 9999;
-}
-
-.hero {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    background-image: url("../images/hero_image.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 header h1 {
@@ -66,19 +67,57 @@ header nav ul li a {
     opacity: 0.7;
   }
 
-.main {
-    padding-top: 10%;
+  .hero {
+    height: 300px;
     width: 100%;
+    display: flex;
+    background-image: url("../images/hero_image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    width: 80%;
     height: 100vh;
-    background-color: var(--blue);
     background-position: center;
     background-size: cover;
 }
 
-.page-item {
-    width: 100%;
-    height: 230px;
+.flex-container {
+    margin-top: 10%;
     display: flex;
-    text-align: center;
-    background-color: var(--purple);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-item {
+    width: 45%;
+    border-radius: 14px;
+    border: 4px solid var(--orange);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+#run-buddy {
+    background-image: url("../images/run.jpg");
+}
+
+#robot-battles {
+    background-image: url("../images/robot.jpg");
+}
+
+#password-generator {
+    background-image: url("../images/safe.jpg");
+}
+
+#rock-paper-scissors {
+    background-image: url("../images/rock-paper-scissors.jpg");
 }

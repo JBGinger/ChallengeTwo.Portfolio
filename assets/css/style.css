@@ -1,37 +1,44 @@
 :root {
-    --first-color: #659DBD;
-    --second-color: #8D8741;
-    --third-color: #DAAD86;
-    --fourth-color: #BC986A;
-    --fifth-color: #FBEEC1;
+    --black: #000000;
+    --blue: #062F4F;
+    --purple: #813772;
+    --orange: #B82601;
 }
 
 * {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
     padding: 20px 35px;
-    background-color: var(--first-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
+    background-color: var(--black);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: 80%;
     z-index: 9999;
+}
+
+.hero {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    background-image: url("../images/hero_image.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: var(--second-color);
+    color: var(--purple);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
@@ -52,13 +59,26 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 30px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: var(--second-color);
+    color: var(--purple);
+  }
+
+  header nav ul li a:hover {
+    opacity: 0.7;
   }
 
 .main {
+    padding-top: 10%;
     width: 100%;
     height: 100vh;
-    background-color: var(--fifth-color);
+    background-color: var(--blue);
     background-position: center;
     background-size: cover;
+}
+
+.page-item {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    text-align: center;
+    background-color: var(--purple);
 }

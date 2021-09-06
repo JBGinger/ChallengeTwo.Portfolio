@@ -151,6 +151,9 @@ p {
     #about-me p {
       font-size: 32px;
     }
+    .big-only {
+        display: hidden;
+    }
   }
 
 #run-buddy {

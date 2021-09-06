@@ -103,7 +103,7 @@ header nav ul li a:hover {
 }
 
 p {
-    font-size: 16px;
+    font-size: 24px;
     color: var(--white);
 }
 
@@ -129,17 +129,29 @@ p {
     flex-direction: column;
 }
 
-@media (min-width: 993px) {.flex-item {
-    width: 45%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}}
-
-@media (max-width: 992px) {.flex-item {
-    width: 100%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}}
+@media (min-width: 993px) {
+    .flex-item {
+       width: 45%;
+       margin-left: 2.5%;
+       margin-right: 2.5%;
+    }
+  }
+  @media (max-width: 992px) {
+    .flex-item {
+        width: 100%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    #about-me {
+        width: 85%;
+    }
+    #about-me h2 {
+        font-size: 40px;
+    }
+    #about-me p {
+      font-size: 32px;
+    }
+  }
 
 #run-buddy {
     background-image: url("../images/run.jpg");
@@ -171,15 +183,11 @@ footer {
     z-index: 9999;
 }
 
-#contact-me h3 {
-    font-size: 20px;
-}
-
 .footer-col {
     margin-left: 20px;
   }
 
-  .right-just {
+.right-just {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

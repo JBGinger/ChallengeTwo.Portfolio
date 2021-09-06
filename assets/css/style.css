@@ -144,6 +144,20 @@ p {
     background-image: url("../images/rock-paper-scissors.jpg");
 }
 
+footer {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-color: var(--black);
+    color: white;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 80%;
+    z-index: 9999;
+}
+
 #contact-me {
     background-attachment: scroll;
     padding: 30px;
@@ -164,9 +178,9 @@ p {
   }
 
   .right-just {
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
     }
-
-.left-just {
-    float: left;
-}

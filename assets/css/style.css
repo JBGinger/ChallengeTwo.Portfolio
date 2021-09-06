@@ -129,6 +129,19 @@ p {
     flex-direction: column;
 }
 
+.flex-item a {
+    margin-top: auto;
+    background-color: gray;
+    color: var(--black);
+    opacity: 75%;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+}
+
+.flex-item a:hover {
+    opacity: 100%;
+}
+
 @media (min-width: 993px) {
     .flex-item {
        width: 45%;
@@ -152,7 +165,7 @@ p {
       font-size: 32px;
     }
     .big-only {
-        display: hidden;
+        display: none;
     }
   }
 

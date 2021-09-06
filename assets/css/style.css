@@ -85,17 +85,19 @@ header nav ul li a:hover {
 }
 
 #about-me {
-    margin-top: 20px;
     width: 70%;
     min-height: 100px;
     display: flex;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     flex-wrap: wrap;
 }
 
 #about-me h2 {
     font-size: 30px;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
     color: var(--white);
     display: flex;
 }
@@ -106,7 +108,7 @@ p {
 }
 
 .flex-container {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -121,7 +123,7 @@ p {
     margin-bottom: 15px;
     background-size: cover;
     background-position: center;
-    padding: 20px 0;
+    padding: 20px 8px;
     min-height: 250px;
     display: flex;
     flex-direction: column;

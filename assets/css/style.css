@@ -146,7 +146,6 @@ p {
 
 #contact-me {
     background-attachment: scroll;
-    display: flex;
     padding: 30px;
     min-height: 50px;
     width: 100%;
